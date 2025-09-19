@@ -21,6 +21,7 @@
 ├─ docker-compose.yml
 ├─ build.sh
 └─ run.sh
+```
 
 
 **Тесты проверяют:**
