@@ -38,20 +38,21 @@
 
 ## Настройка переменных окружения
 В корне проекта создайте файл `.env` с содержимым:
-SSH_USER=testuser
+```SSH_USER=testuser
 SSH_PASS=testpass
 SSH_PORT=22
 
 TARGET_HOST=target
 TARGET_PORT=80
 LOG_INTERVAL=1
+```
 
 ## Сборка проекта
 
 Скрипт для сборки Docker-образов:
-./build.sh
+```./build.sh```
 Скрипт для запуска контейнеров и выполнения тестов:
-./run.sh
+```./run.sh```
 
 ## Ожидаемый результат
 ```agent   | ============================= test session starts ==============================
@@ -64,7 +65,7 @@ agent   | tests/test_apache.py::test_apache_running PASSED                      
 agent   | tests/test_apache.py::test_no_errors_in_logs PASSED                      [ 50%]
 agent   | tests/test_apache.py::test_index_page_avaliable PASSED                   [ 75%]
 agent   | tests/test_apache.py::test_nonexistent_page PASSED                       [100%]
-
+```
 
 
 
