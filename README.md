@@ -20,7 +20,7 @@
 ├─ .env
 ├─ docker-compose.yml
 ├─ build.sh
-└─ run.sh```
+└─ run.sh
 
 
 **Тесты проверяют:**
@@ -62,7 +62,7 @@ agent   |
 agent   | tests/test_apache.py::test_apache_running PASSED                         [ 25%]
 agent   | tests/test_apache.py::test_no_errors_in_logs PASSED                      [ 50%]
 agent   | tests/test_apache.py::test_index_page_avaliable PASSED                   [ 75%]
-agent   | tests/test_apache.py::test_nonexistent_page PASSED                       [100%]```
+agent   | tests/test_apache.py::test_nonexistent_page PASSED                       [100%]
 
 
 
