@@ -8,7 +8,7 @@
 - **agent**: контейнер с Python-тестами (`pytest` + `paramiko`)
 
 ## Структура проекта
-apache_tests/
+```apache_tests/
 ├─ agent/
 │   ├─ Dockerfile
 │   └─ tests/
@@ -19,6 +19,8 @@ apache_tests/
 │   └─ index.html
 ├─ .env
 ├─ docker-compose.yml
+├─ build.sh
+└─ run.sh```
 
 
 **Тесты проверяют:**
@@ -51,7 +53,7 @@ LOG_INTERVAL=1
 ./run.sh
 
 ## Ожидаемый результат
-agent   | ============================= test session starts ==============================
+```agent   | ============================= test session starts ==============================
 agent   | platform linux -- Python 3.11.2, pytest-8.4.2, pluggy-1.6.0 -- /opt/venv/bin/python3
 agent   | cachedir: .pytest_cache
 agent   | rootdir: /home/tester
@@ -60,7 +62,9 @@ agent   |
 agent   | tests/test_apache.py::test_apache_running PASSED                         [ 25%]
 agent   | tests/test_apache.py::test_no_errors_in_logs PASSED                      [ 50%]
 agent   | tests/test_apache.py::test_index_page_avaliable PASSED                   [ 75%]
-agent   | tests/test_apache.py::test_nonexistent_page PASSED                       [100%]
+agent   | tests/test_apache.py::test_nonexistent_page PASSED                       [100%]```
+
+
 
 
 
