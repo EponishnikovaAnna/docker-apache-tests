@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+    target:
+        build:
+            context: .
+            dockerfile: target/Dockerfile
+        container_name: target
+        ports:
+            - "8080:80"
+            - "2222:22"
+    
+    agent:
+        build:
+            context: .
+            dockerfile: agent/Dockerfile
+        container_name: agent
+        depends_on: 
+            - target
+        env_file:
+            - .env
